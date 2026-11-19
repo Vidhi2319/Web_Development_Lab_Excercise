@@ -1,0 +1,127 @@
+
+/* Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+.navbar {
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: orange;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: orange;
+}
+
+/* Button */
+.btn {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Main */
+main {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 40px 20px 15px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 250px;
+}
+
+.footer-box h2 {
+    color: orange;
+}
+
+.footer-box a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-box a:hover {
+    color: orange;
+}
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    border-top: 1px solid gray;
+    margin-top: 30px;
+    padding-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-box {
+        align-items: center;
+    }
+}

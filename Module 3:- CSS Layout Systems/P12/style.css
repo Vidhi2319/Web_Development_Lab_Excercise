@@ -1,0 +1,100 @@
+
+/* Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Main Section */
+main {
+    padding: 30px;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Advanced CSS Grid */
+.project-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-rows: auto auto;
+
+    gap: 20px;
+}
+
+/* Cards */
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px gray;
+    text-align: center;
+    
+}
+
+/* Different Grid Sizes */
+.card1 {
+    grid-column: span 2;
+}
+
+.card4 {
+    grid-row: span 2;
+}
+
+/* Hover Effect */
+.card:hover {
+    background-color: lightblue;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card1 {
+        grid-column: span 2;
+    }
+
+    .card4 {
+        grid-row: span 1;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card1 {
+        grid-column: span 1;
+    }
+}

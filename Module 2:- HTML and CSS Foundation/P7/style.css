@@ -1,0 +1,60 @@
+
+:root {
+    --primary: blue;
+    --secondary: black;
+    --background: lightgray;
+    --text: #333333;
+    --white: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: var(--text);
+    background-color: var(--background);
+}
+
+header {
+    background-color: var(--secondary);
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+    color: var(--primary);
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+section {
+    background-color: var(--white);
+    padding: 30px;
+    margin: 20px;
+}
+
+
+button {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+}
+
+
+footer {
+    background-color: var(--secondary);
+    color: var(--white);
+    text-align: center;
+    padding: 10px;
+}
+
